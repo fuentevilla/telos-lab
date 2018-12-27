@@ -12,7 +12,7 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Saving4Soon</a>
+      <a class="navbar-brand" href="#" style="font-size: 16px;">Saving4Soon</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -20,11 +20,11 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Transfer</a>
-          </li>
+              <a class="nav-link" href="index.html">Home</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="transfer.html">Transfer</a>
+            </li>
         </ul>
       </div>
     </nav>
@@ -39,6 +39,11 @@
 
       <div class="col-12 text-center result">
         <h2>$1,077.11</h2>
+        <div class="blue-line"></div>
+      </div>
+
+      <div class="col-12 notification-bell">
+        <i class="far fa-bell"></i>
       </div>
 
       <div class="col-12 row left-center notification-box" id="notificationBoxOne">
@@ -69,10 +74,10 @@
         <div class="col-1 text-center">
           <img src="assets/img/reward.png">
         </div>
-        <div class="col-8">
+        <div class="col-9">
           <p>Earn Rewards by saving</p>
         </div>
-        <div class="col-3 text-center">
+        <div class="col-2 text-center">
             <label class="switch">
               <input type="checkbox" checked>
               <span class="slider round"></span>
@@ -84,10 +89,10 @@
         <div class="col-1 text-center">
           <img src="assets/img/piggy-settings.png">
         </div>
-        <div class="col-8">
+        <div class="col-9">
           <p>Save Automatically</p>
         </div>
-        <div class="col-3 text-center">
+        <div class="col-2 text-center">
             <label class="switch">
               <input type="checkbox" checked>
               <span class="slider round"></span>
@@ -99,10 +104,10 @@
         <div class="col-1 text-center">
           <img src="assets/img/protection.png">
         </div>
-        <div class="col-8">
+        <div class="col-9">
           <p>Low balance protection</p>
         </div>
-        <div class="col-3 text-center">
+        <div class="col-2 text-center">
             <label class="switch">
               <input type="checkbox" checked>
               <span class="slider round"></span>
@@ -111,13 +116,17 @@
       </div>
 
       <div class="bottom-menu row">
-        <div class="col-4 text-center">
-          <img src="assets/img/home.png">
-          <p>Home</p>
+        <div class="col-4 text-center active">
+            <a href="index.html">
+                <img src="assets/img/home_active.png">
+                <p>Home</p>
+            </a>
         </div>
         <div class="col-4 text-center">
-          <img src="assets/img/transfer.png">
-          <p>Transfer</p>
+            <a href="transfer.html">
+                <img src="assets/img/transfer.png">
+                <p>Transfer</p>
+            </a>
         </div>
         <div class="col-4 text-center">
           <img src="assets/img/user.png">
