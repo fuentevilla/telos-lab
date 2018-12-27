@@ -1,12 +1,130 @@
 <head>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <script src="assets/script.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="assets/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
 </head>
 
 <body>
-  <div class="row">
-    <div class="col-sm-12">
-      <h4>instalando</h4>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Saving4Soon</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Transfer</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-12 text-center ">
+        <h4>My Account Balance</h4>
+      </div>
+
+      <div class="col-12 text-center result">
+        <h2>$1,077.11</h2>
+      </div>
+
+      <div class="col-12 row left-center notification-box" id="notificationBoxOne">
+        <div class="col-10">
+          <p>A $20 saving transaction will be executed on Aug 6, 2018</p>
+        </div>
+        <div class="col-2 text-center">
+            <i onclick="addClassCloseOne()" class="fas fa-times"></i>
+        </div>
+      </div>
+
+      <div class="col-12 row left-center notification-box" id="notificationBoxTwo">
+        <div class="col-10">
+          <p>Your balance is bellow $300</p>
+        </div>
+        <div class="col-2 text-center">
+            <i onclick="addClassCloseTwo()" class="fas fa-times"></i>
+        </div>
+      </div>
+
+      <div class="col-12 features">
+        <h1>
+          Features
+        </h1>
+      </div>
+
+      <div class="row feature-row col-12">
+        <div class="col-1 text-center">
+          <img src="assets/img/reward.png">
+        </div>
+        <div class="col-8">
+          <p>Earn Rewards by saving</p>
+        </div>
+        <div class="col-3 text-center">
+            <label class="switch">
+              <input type="checkbox" checked>
+              <span class="slider round"></span>
+            </label>
+        </div>
+      </div>
+
+      <div class="row feature-row col-12">
+        <div class="col-1 text-center">
+          <img src="assets/img/piggy-settings.png">
+        </div>
+        <div class="col-8">
+          <p>Save Automatically</p>
+        </div>
+        <div class="col-3 text-center">
+            <label class="switch">
+              <input type="checkbox" checked>
+              <span class="slider round"></span>
+            </label>
+        </div>
+      </div>
+
+      <div class="row feature-row col-12">
+        <div class="col-1 text-center">
+          <img src="assets/img/protection.png">
+        </div>
+        <div class="col-8">
+          <p>Low balance protection</p>
+        </div>
+        <div class="col-3 text-center">
+            <label class="switch">
+              <input type="checkbox" checked>
+              <span class="slider round"></span>
+            </label>
+        </div>
+      </div>
+
+      <div class="bottom-menu row">
+        <div class="col-4 text-center">
+          <img src="assets/img/home.png">
+          <p>Home</p>
+        </div>
+        <div class="col-4 text-center">
+          <img src="assets/img/transfer.png">
+          <p>Transfer</p>
+        </div>
+        <div class="col-4 text-center">
+          <img src="assets/img/user.png">
+          <p>Account</p>
+        </div>
+      </div>
+
     </div>
   </div>
 </body>
